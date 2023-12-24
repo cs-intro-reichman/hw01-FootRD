@@ -4,6 +4,14 @@
  */
 public class Coins {
 	public static void main(String[] args) {
-		// Put your code here
+		int total_coins = Integer.parseInt(args[0]);
+
+		int total_quarters = total_coins/25;
+		int total_cents = total_coins%25;
+
+		String output_quarters = "Use " + total_quarters + " quarters ";
+		String output_cents = "Use " + total_cents + " cents";
+
+		System.out.println(output_quarters + "and " + output_cents);
 	}
 }
